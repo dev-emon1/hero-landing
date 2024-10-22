@@ -312,7 +312,7 @@ nav {
   background: #462469;
 }
 
-/* responsive */
+/* ------------------ responsive part start------------ */
 @media (max-width: 575.98px) {
   .hero-wrapper {
     padding-top: 40px;
@@ -334,24 +334,24 @@ nav {
   }
 
   .hero-heading h1 {
-    font-size: 42px;
+    font-size: 38px;
   }
 
   .hero-heading h2 {
-    font-size: 28px;
+    font-size: 26px;
     margin-top: 10px;
   }
 
   .hero-description {
     width: 100%;
-    margin-top: 25px;
+    margin-top: 10px;
     padding: 20px;
   }
 
   .hero-description p {
     text-align: center;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     padding-left: 0;
   }
@@ -400,15 +400,15 @@ nav {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .hero-wrapper {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-left: 5px;
     padding-right: 5px;
   }
 
   .hero-content {
     display: block;
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 0px;
     text-align: center;
   }
 
@@ -418,11 +418,11 @@ nav {
   }
 
   .hero-heading h1 {
-    font-size: 60px;
+    font-size: 38px;
   }
 
   .hero-heading h2 {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .hero-description {
@@ -432,10 +432,10 @@ nav {
   .hero-description p {
     text-align: center;
     color: white;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
     padding-left: 0;
-    margin-top: 35px;
+    margin-top: 10px;
   }
 
   .woman {
@@ -452,7 +452,7 @@ nav {
 
   .communication-section {
     display: block;
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   .social-media {
@@ -464,12 +464,12 @@ nav {
 
   .more-info-btn {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 10px;
   }
 
   .more-info-btn button {
     font-size: 14px;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 30px;
     border: 1px solid white;
     transition: none;
@@ -486,39 +486,64 @@ nav {
   .white-spring-2 {
     display: none;
   }
+
+  .social-media .instagram {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .social-media .facebook {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .social-media .twitter {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-wrapper {
+    padding-top: 70px;
+  }
+
   .hero-content {
-    padding-top: 100px;
-    padding-bottom: 70px;
+    padding-top: 140px;
+    padding-bottom: 0;
     padding-left: 5px;
     padding-right: 5px;
   }
 
   .hero-content .hero-heading {
-    padding-right: 0;
+    padding-right: 50px;
   }
 
   .hero-heading h1 {
-    font-size: 48px;
+    font-size: 40px;
   }
 
   .hero-heading h2 {
-    font-size: 30px;
+    font-size: 26px;
     margin-top: 10px;
   }
 
   .hero-description p {
     text-align: end;
     color: white;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
-    padding-left: 110px;
+    padding-left: 120px;
   }
 
   .communication-section {
-    margin-top: 180px;
+    margin-top: 50px;
     padding: 0 15px;
   }
 
@@ -548,16 +573,14 @@ nav {
     font-weight: 400;
     padding: 8px 15px;
     border-radius: 30px;
+    border: 1px solid white;
     cursor: pointer;
     z-index: 44;
   }
 
   .woman {
     width: 30%;
-    position: absolute;
-    bottom: 0;
     left: 36%;
-    z-index: -1;
   }
 
   .yellow {
@@ -587,8 +610,8 @@ nav {
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .hero-content {
-    padding-top: 130px;
-    padding-bottom: 140px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -598,22 +621,26 @@ nav {
   }
 
   .hero-heading h1 {
-    font-size: 58px;
+    font-size: 52px;
   }
 
   .hero-heading h2 {
-    font-size: 34px;
+    font-size: 30px;
   }
 
   .hero-description p {
     text-align: end;
     color: white;
-    font-size: 20px;
-    padding-left: 100px;
+    font-size: 16px;
+    padding-left: 200px;
+  }
+
+  .woman {
+    width: 25%;
   }
 
   .communication-section {
-    margin-top: 30px;
+    margin-top: 120px;
     padding: 0 15px;
     margin-bottom: 0;
   }
@@ -834,7 +861,7 @@ nav {
   }
 
   .communication-section {
-    margin-top: 0;
+    margin-top: 120px;
     padding: 0 15px;
   }
 }
