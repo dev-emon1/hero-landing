@@ -1,0 +1,840 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+
+.hero-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #4f2a76;
+  padding-top: 100px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.orange-shape {
+  width: 27%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.white-spring {
+  width: 7%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.woman {
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  z-index: -1;
+}
+
+.yellow {
+  width: 27%;
+  position: absolute;
+  bottom: 0;
+  left: 38%;
+  z-index: -2;
+}
+
+.yellow-spring {
+  width: 12%;
+  position: absolute;
+  bottom: 0;
+  left: 32%;
+  z-index: -2;
+}
+
+.white-spring-2 {
+  width: 13%;
+  position: absolute;
+  bottom: 0;
+  right: 32%;
+  z-index: -2;
+}
+
+.blue {
+  width: 22%;
+  position: absolute;
+  bottom: -3%;
+  right: 0;
+  z-index: -2;
+}
+
+.orange-spring {
+  width: 8%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.blue-leaf {
+  width: 11%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.white-shape {
+  width: 15%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+}
+
+.logo .logo-name p {
+  text-transform: uppercase;
+  line-height: 1;
+  margin-left: 10px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #f4b41a;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .fa-bars {
+  color: white;
+  font-size: 25px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #333;
+    width: 200px;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 1;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.hero-content {
+  display: flex;
+  padding-top: 280px;
+  padding-bottom: 230px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-content .hero-heading {
+  width: 50%;
+  color: white;
+  padding-right: 330px;
+}
+
+.hero-heading h1 {
+  font-size: 80px;
+  line-height: 1;
+}
+
+.hero-heading h2 {
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+.hero-description {
+  width: 50%;
+}
+
+.hero-description p {
+  text-align: end;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 340px;
+}
+
+.communication-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-media .instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  padding: 20px;
+  font-size: 30px;
+  color: orangered;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 44;
+}
+
+.social-media .facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  padding: 20px;
+  font-size: 30px;
+  color: orangered;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 44;
+}
+
+.social-media .twitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  padding: 20px;
+  font-size: 30px;
+  color: orangered;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 44;
+}
+
+.more-info-btn button {
+  background: #4f2a76;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  padding: 15px 40px;
+  border-radius: 39px;
+  border: none;
+  cursor: pointer;
+  z-index: 44;
+  transition: all ease-in 0.3s;
+}
+
+.more-info-btn button:hover {
+  background: #462469;
+}
+
+/* responsive */
+@media (max-width: 575.98px) {
+  .hero-wrapper {
+    padding-top: 40px;
+  }
+
+  .hero-content {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 80px;
+    padding: 0 3px;
+    text-align: center;
+  }
+
+  .hero-content .hero-heading {
+    width: 100%;
+    color: white;
+    padding-right: 0;
+  }
+
+  .hero-heading h1 {
+    font-size: 42px;
+  }
+
+  .hero-heading h2 {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+
+  .hero-description {
+    width: 100%;
+    margin-top: 25px;
+    padding: 20px;
+  }
+
+  .hero-description p {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 0;
+  }
+
+  .communication-section {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .more-info-btn {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .more-info-btn button {
+    background: #4f2a76;
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: none;
+  }
+
+  .woman {
+    display: none;
+  }
+
+  .yellow-spring {
+    display: none;
+  }
+
+  .white-spring-2 {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .hero-wrapper {
+    padding-top: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .hero-content {
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+
+  .hero-content .hero-heading {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .hero-heading h1 {
+    font-size: 60px;
+  }
+
+  .hero-heading h2 {
+    font-size: 30px;
+  }
+
+  .hero-description {
+    width: 100%;
+  }
+
+  .hero-description p {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 0;
+    margin-top: 35px;
+  }
+
+  .woman {
+    display: none;
+  }
+
+  .yellow-spring {
+    display: none;
+  }
+
+  .white-spring-2 {
+    display: none;
+  }
+
+  .communication-section {
+    display: block;
+    margin-top: 0;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .more-info-btn {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .more-info-btn button {
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid white;
+    transition: none;
+  }
+
+  .woman {
+    display: none;
+  }
+
+  .yellow-spring {
+    display: none;
+  }
+
+  .white-spring-2 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-content {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .hero-content .hero-heading {
+    padding-right: 0;
+  }
+
+  .hero-heading h1 {
+    font-size: 48px;
+  }
+
+  .hero-heading h2 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  .hero-description p {
+    text-align: end;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 110px;
+  }
+
+  .communication-section {
+    margin-top: 180px;
+    padding: 0 15px;
+  }
+
+  .social-media .instagram {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .social-media .facebook {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .social-media .twitter {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .more-info-btn button {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 44;
+  }
+
+  .woman {
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 36%;
+    z-index: -1;
+  }
+
+  .yellow {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    z-index: -2;
+  }
+
+  .yellow-spring {
+    width: 16%;
+    position: absolute;
+    bottom: 0;
+    left: 28%;
+    z-index: -2;
+  }
+
+  .white-spring-2 {
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    right: 24%;
+    z-index: -2;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero-content {
+    padding-top: 130px;
+    padding-bottom: 140px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero-content .hero-heading {
+    padding-right: 0;
+  }
+
+  .hero-heading h1 {
+    font-size: 58px;
+  }
+
+  .hero-heading h2 {
+    font-size: 34px;
+  }
+
+  .hero-description p {
+    text-align: end;
+    color: white;
+    font-size: 20px;
+    padding-left: 100px;
+  }
+
+  .communication-section {
+    margin-top: 30px;
+    padding: 0 15px;
+    margin-bottom: 0;
+  }
+
+  .social-media .instagram {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .social-media .facebook {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .social-media .twitter {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .more-info-btn button {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 44;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .hero-content {
+    padding-top: 140px;
+    padding-bottom: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero-content .hero-heading {
+    padding-right: 0;
+  }
+
+  .hero-heading h1 {
+    font-size: 65px;
+  }
+
+  .hero-heading h2 {
+    font-size: 34px;
+  }
+
+  .hero-description p {
+    text-align: end;
+    color: white;
+    font-size: 20px;
+    padding-left: 200px;
+  }
+
+  .communication-section {
+    margin-top: 20px;
+    padding: 0 15px;
+  }
+
+  .social-media .instagram {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  .social-media .facebook {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  .social-media .twitter {
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  .more-info-btn button {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 15px;
+    border-radius: 30px;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1599.98px) {
+  .hero-content {
+    padding-top: 160px;
+    padding-bottom: 140px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero-content .hero-heading {
+    padding-right: 0;
+  }
+
+  .hero-heading h1 {
+    font-size: 65px;
+  }
+
+  .hero-heading h2 {
+    font-size: 32px;
+  }
+
+  .hero-description p {
+    text-align: end;
+    color: white;
+    font-size: 20px;
+    padding-left: 160px;
+  }
+
+  .communication-section {
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+
+  .orange-shape {
+    width: 23%;
+  }
+
+  .woman {
+    width: 20%;
+  }
+
+  .white-spring-2 {
+    right: 35%;
+  }
+
+  .blue {
+    width: 18%;
+    position: absolute;
+    bottom: -3%;
+    right: 0;
+    z-index: -2;
+  }
+
+  .social-media .instagram {
+    width: 40px;
+    height: 40px;
+    padding: 16px;
+    font-size: 25px;
+  }
+
+  .social-media .facebook {
+    width: 40px;
+    height: 40px;
+    padding: 16px;
+    font-size: 25px;
+  }
+
+  .social-media .twitter {
+    width: 40px;
+    height: 40px;
+    padding: 16px;
+    font-size: 25px;
+  }
+
+  .more-info-btn button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1799.98px) {
+  .hero-content {
+    padding-top: 140px;
+    padding-bottom: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero-description p {
+    padding-left: 240px;
+  }
+
+  .woman {
+    width: 18%;
+  }
+
+  .white-spring-2 {
+    bottom: 0;
+    right: 35%;
+  }
+
+  .communication-section {
+    margin-top: 0;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .hero-content {
+    padding-top: 150px;
+    padding-bottom: 140px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero-description p {
+    padding-left: 330px;
+  }
+
+  .white-spring-2 {
+    bottom: 0;
+    right: 32%;
+  }
+
+  .communication-section {
+    margin-top: 0;
+    padding: 0 15px;
+  }
+}
